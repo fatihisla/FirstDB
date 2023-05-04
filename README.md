@@ -15,7 +15,7 @@
 5-Mentre realizzi il codice noterai che questo comando darà errore : SQLiteConnection cn1 = new SQLiteConnection("chinook.db");
   #Per risolvere l'errore dobbiamo includere la libreria sqlite-net-pcl tramite questo comando nel terminale: 
     
-    (è una L minuscola  non un 1)
+    //(è una L minuscola  non un 1)
     
     dotnet add package sqlite-net-pcl
 
