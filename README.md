@@ -27,6 +27,7 @@ LINK:https://www.sqlitetutorial.net/sqlite-sample-database/
 Basterà scendere per trovare questo:
 
 ![image](https://user-images.githubusercontent.com/116791165/235083445-f47f8a37-b962-4ffd-b280-42026da64e0e.png)
+
 -----------------------------------------------------------------------------------------------------------
  il codice C# necessario a visualizzare tutti gli artisti:
   
