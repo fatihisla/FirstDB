@@ -2,11 +2,13 @@
 
 *Primo passo*:
 
-1-Creare una cartella nominarla e aprirla nel tuo visual studio code.
+1-Creare una cartella,nominarla e aprirla nel tuo visual studio code.
 
-2-Fare dotnet new console.
+2-eseguire
 
-3-Andare su google e scaricare il file  chinook.db(link file dopo).
+    dotnet new console.
+
+3-Andare su google e scaricare il file  chinook.db(il link file è giù).
 
 4-Aggiungere il file nella cartella poi aggiungere se non si ha l'estensione SQLite.
 
@@ -14,8 +16,7 @@
 
 5-Mentre realizzi il codice noterai che questo comando darà errore : SQLiteConnection cn1 = new SQLiteConnection("chinook.db");
   #Per risolvere l'errore dobbiamo includere la libreria sqlite-net-pcl tramite questo comando nel terminale: 
-    
-    //(è una L minuscola  non un 1)
+  //(è una L minuscola  non un 1)
     
     dotnet add package sqlite-net-pcl
 
@@ -31,31 +32,37 @@ Basterà scendere per trovare questo:
   
   //connessione a db
 ####
+    
     SQLiteConnection cn1 = new SQLiteConnection("chinook.db");
+    
     var tblArtist = cn1.Query<Artist>("select * from artists ");
+    
     Console.WriteLine($"in questa tabella ci sono {tblArtist.Count} record!");
 ####
-//
-//------------------------
+
 #####
     public class Artist
     {
         public int ArtistId { get; set; }
-        .public string Name { get; set; }
+        public string Name { get; set; }
     }
 #####
 In fine si utilizza il debug ed un punto di interruzzione poi si scrive nel terminale dotnet run e si controlla se funziona.
 
-Immagine risultatp:
+Immagine risultato:
 
-![image](https://user-images.githubusercontent.com/116791165/235088090-ec0b3d33-ac72-4024-b787-894e1d8fe2f1.png)
+![image](https://user-images.githubusercontent.com/116791165/236145925-08a4d4e3-8717-494c-8cd4-a4a2f15b9016.png)
 
-Immagine tabella artist:
+l'obbiettivo è sapere quanti record ci sono nella tabella  sottostante.
+Immagine tabella artists:
 
 ![image](https://user-images.githubusercontent.com/116791165/235088291-31d378fd-01f6-46e7-82a4-e8979eb69854.png)
 
+-Fonti:
 
-//Informazioni prese dal Professor Maurizio Conti e Matteo Sartini,dal sito di Microsoft.
+  _Informazioni prese da una lezione di  M. Conti e M. Sartini
+  
+  _Dal sito di Microsoft.
 
 
 
