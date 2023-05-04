@@ -40,7 +40,7 @@ Basterà scendere per trovare questo:
     
     Console.WriteLine($"in questa tabella ci sono {tblArtist.Count} record!");
 ####
-
+//fine main inizio dichiarazioni 
 #####
     public class Artist
     {
